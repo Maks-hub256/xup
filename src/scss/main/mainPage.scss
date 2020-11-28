@@ -7,6 +7,438 @@
 }
 
 //header
+
 //main
+.main{
+    &__wrapper{
+        max-width: 1128px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    &__title-wrapper{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        margin-bottom: 286px;
+    }
+    &__title{
+        @include title;
+        text-align: center;
+    }
+    &__sub-title{
+        @include  sub-title;
+        margin-top: 24px;
+    }
+    &__title-button{
+        padding: 18px 32px;
+        margin-top: 64px;
+        background: $blue;
+        color: $white;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: .3s;
+        white-space: nowrap;
+        box-shadow: 0px 12px 48px -18px rgba(20,33,255,0.76);
+        @include buttonEffect;
+    }
+}
 
+//team
+.team{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 400px;
+    grid-column-gap: 48px;
+    &__img{
+        width: 376px;
+        height: 400px;
+        box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.47);
+        border-radius: 8px;
+    }
+    &__title{
+        align-self: start;
+        @include title;
+    }
+    &__text{
+        font-size: 14px;
+        line-height: 24px;
+        color: $grayText;
+        align-self: end;
+    }
+}
 
+//work
+.work{
+    margin-top: $topOffset;
+    width: 100%;
+    &__title{
+        @include title;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    &__bunner{
+        width: 100%;
+        box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.47);
+        border-radius:8px;
+    }
+    &__line{
+        @include grid-line;
+    }
+    &__section{
+        @include grid-section
+    }
+    &__section-title{
+        @include grid-section-title;
+    }
+    &__text{
+        @include grid-text;
+    }
+}
+
+//interface
+.interface{
+    width: 100%;
+    margin-top: $topOffset;
+    &__title{
+        @include title;
+        text-align: center;
+    }
+    &__sub-title{
+        @include sub-title;
+        margin-top: 24px;
+    }
+    &__components-wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 48px;
+        margin-top: 64px;
+    }
+    &__component{
+        justify-self: center;
+    }
+    &__img{
+        border-radius: 8px;
+        box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.47);
+        width:328px;
+        height: 242px;
+    }
+    &__text{
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        color: $black;
+        margin-top: 24px;
+    }
+}
+
+//portfolio
+.portfolio{
+    width: 100%;
+    margin-top: $topOffset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        text-align: center;
+        @include title;
+    }
+    &__wrapper{
+        margin-top: 64px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        grid-gap: 48px;
+    }
+    &__section{
+        height: 540px;
+        width: 540px;
+        position: relative;
+        &:first-child{
+            background: url(../../img/main_page/project1.png);
+        }
+        &:nth-child(2){
+            background: url(../../img/main_page/project2.png);
+        }
+        &:nth-child(3){
+            background: url(../../img/main_page/project3.png);
+        }
+        &:last-child{
+            background: url(../../img/main_page/project4.png);
+        }
+        border-radius: 8px;
+        box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.47);
+    }
+    &__section-background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: .3s;
+        border-radius: 8px;
+        padding: 24px;
+        display: flex;
+        align-items: flex-end;
+        &:hover{
+            background-color: $blue;
+            opacity: 0.9;
+        }
+        &:hover .portfolio__text-area{
+            opacity: 1;
+            transform: translate(0,0);
+        }
+    }
+    &__text-area{
+        margin-bottom: 14px;
+        opacity: 0;
+        transition: .3s;
+        transform: translate(0,30px);
+    }
+    &__little-title{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        color: $white;
+        margin-bottom: 8px;
+    }
+    &__text{
+        font-size: 14px;
+        line-height: 24px;
+        color: $white;
+        margin-bottom: 50px;
+    }
+    &__button{
+        background-color: $white;
+        color: $blue;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 18px 32px;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+    &__bottom-button{
+        padding: 18px 32px;
+        margin-top: 64px;
+        background: $blue;
+        color: $white;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: .3s;
+        white-space: nowrap;
+        box-shadow: 0px 12px 48px -18px rgba(20,33,255,0.76);
+        @include buttonEffect;
+    }
+}
+
+//profit
+.profit{
+    width: 100%;
+    margin-top: $topOffset;
+    &__title{
+        @include title;
+        text-align: center;
+    }
+    &__bunner{
+        width: 100%;
+        margin-top: $mobileOffset;
+    }
+    &__line{
+        @include grid-line;
+    }
+    &__section{
+        @include grid-section;
+    }
+    &__little-title{
+        @include grid-section-title
+    }
+    &__text{
+        @include grid-text
+    }
+}
+
+//action
+.action{
+    width: 100%;
+    margin-top: $topOffset;
+    &__title{
+        @include title;
+        text-align: center;
+    }
+    &__section-wrapper{
+        @include line-block;
+    }
+    &__section{
+        @include line-block-section;
+    }
+    &__img{
+        @include line-block-img;
+    }
+    &__text{
+        @include line-block-text;
+    }
+    &__little-title{
+        @include line-block-little-title;
+    }
+}
+
+//process
+.process{
+    width: 100%;
+    margin-top: $topOffset;
+    &__title{
+        @include title;
+        text-align: center;
+    }
+    &__sub-title{
+        @include sub-title;
+        margin-top: 24px;
+    }
+    &__way{
+        width: 100%;
+        margin-top: $mobileOffset;
+    }
+    &__upper-side{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 40px;
+    }
+    &__chapter{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black; 
+    }
+    &__chapter-up{
+        width: 171px;  
+        &:first-child{
+            margin-left: 18px;
+        }
+        &:nth-child(2){
+            margin-left: 13px;
+        }
+        &:nth-child(3){
+            margin-left: 10px;
+        }
+    }
+    &__main-side{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &__line{
+        width: 118px;
+        height: 20px;
+        position: relative;
+        color: $blue;
+        list-style: none;
+        &::before{
+            content: '';
+            position: absolute;
+            background: $blue;
+            top: calc(100% - 50% - 3px);
+            left: -22px;
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(28, 84, 233, 0.5);
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background: $lineBackground;
+            top: calc(100% - 50% - 0.5px);
+        }
+    }
+    &__lower-side{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 40px;
+    }
+    &__chapter-down{
+            margin-left: 50%;
+        &:nth-child(3){
+            white-space: nowrap;
+        }
+    }
+}
+
+//advantages
+.advantages{
+    width: 100%;
+    margin-top: $topOffset;
+    &__title-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 48px;
+    }
+    &__title{
+        @include title;
+    }
+    &__banner{
+        width: 540px;
+        height: 400px;
+    }
+    &__line{
+        @include grid-line;
+    }
+    &__section{
+        @include grid-section;
+    }
+    &__little-title{
+        @include grid-section-title;
+    }
+    &__text{
+        @include grid-text;
+    }
+}
+
+//outsource
+.outsource{
+    width: 100%;
+    margin-top: $topOffset;
+    &__title-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 48px;
+    }
+    &__title{
+        @include title;
+    }
+    &__banner{
+        width: 540px;
+        height: 400px;
+    }
+    &__line{
+        @include grid-line;
+    }
+    &__section{
+        @include grid-section;
+    }
+    &__little-title{
+        @include grid-section-title;
+    }
+    &__text{
+        @include grid-text;
+    }
+}

@@ -1,13 +1,5 @@
-@mixin title {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 64px;
-    color: $black;
-}
+//header
 @mixin navbarLink {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -24,7 +16,6 @@
 }
 @mixin navbarButton {
     background: $white;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -45,4 +36,118 @@
         color: $black;
         border: 1.5px solid $black;
     }
+}
+
+//main
+
+@mixin title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    color: $black;
+}
+
+@mixin sub-title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: $grayText;
+}
+
+@mixin buttonEffect{
+    &:hover{
+        background-color: $liteBlue;
+        color: $white;
+    }
+    &:active{
+        background-color: $black;
+        color: $white;
+    }
+}
+
+@mixin arrow{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 376px 1fr;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 400px;
+    grid-column-gap: 48px;
+}
+
+@mixin arrow-title{
+    @include title;
+    justify-content: start;
+}
+
+@mixin arrow-text{
+    font-size: 14px;
+    line-height: 24px;
+    color: $grayText;
+    align-self: end;
+}
+
+@mixin grid-line {
+    margin-top: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin grid-section {
+    max-width: 540px;
+    width: 95%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+@mixin grid-section-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #2D2D30;
+    margin-bottom: 16px;
+    margin-top: 27px;
+}
+
+@mixin grid-text{
+    @include sub-title;
+    text-align: left;
+}
+
+@mixin line-block{
+    margin-top: $mobileOffset;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin line-block-section{
+    width: 328px;
+    &:nth-child(2){
+        margin: 0 20px;
+    }
+}
+
+@mixin line-block-img{
+    width: 100%;
+}
+
+@mixin line-block-text{
+    @include sub-title;
+    text-align: left;
+    margin-top: 16px;
+}
+
+@mixin line-block-little-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: $black;
+    margin-top: 24px;
 }

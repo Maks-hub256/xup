@@ -43,7 +43,6 @@
   list-style: none;
 }
 .header__link {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -61,7 +60,6 @@
 .header__link-button {
   display: none;
   background: #fff;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -83,9 +81,16 @@
   color: #2D2D30;
   border: 1.5px solid #2D2D30;
 }
+.header__link-button:hover {
+  background-color: #5B64FF;
+  color: #fff;
+}
+.header__link-button:active {
+  background-color: #2D2D30;
+  color: #fff;
+}
 .header__button {
   background: #fff;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -137,6 +142,7 @@
   }
 
   .header {
+    position: fixed;
     height: 64px;
   }
   .header__button {

@@ -47,6 +47,7 @@
     &__link-button{
         display: none;
         @include navbarButton;
+        @include buttonEffect;
     }
     &__button{
         @include navbarButton;
@@ -84,6 +85,7 @@
         display: block !important;
     }
     .header{
+        position: fixed;
         height: 64px;
         &__button{
             display: none;
