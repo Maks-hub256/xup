@@ -1,6 +1,6 @@
 .blue {
   color: #1421FF;
-  font-weight: initial;
+  font-weight: inherit;
 }
 
 .main__wrapper {
