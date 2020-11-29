@@ -1,30 +1,22 @@
-//mobile navbar
-let burgerButton = document.querySelector(".header__burger")
-let navbar = document.querySelector(".header__navbar")
 
-function blockSroll() {
-    document.querySelector("html").classList.add("page-block")
-    document.querySelector("body").classList.add("page-block")
+$(document).ready(function() {
+    $(".questions__info").slideUp()
+})
+
+
+function slide(clickElem, slideElem, sectionElem, optionElem) {
+    $(`.${clickElem}`).on('click', function() {
+        $(`.${slideElem}`).slideToggle(300)
+        $(`.${sectionElem}`).toggleClass("section-active")
+        $(`.${optionElem}`).toggleClass("option-active")
+    })
 }
 
-function unblockScroll() {
-    document.querySelector("html").classList.remove("page-block")
-    document.querySelector("body").classList.remove("page-block")
-}
+slide("line-1", "info-1", "section-1", "option-1")
+slide("line-2", "info-2", "section-2", "option-2")
+slide("line-3", "info-3", "section-3", "option-3")
+slide("line-4", "info-4", "section-4", "option-4")
+slide("line-5", "info-5", "section-5", "option-5")
+slide("line-6", "info-6", "section-6", "option-6")
 
-function checkScroll() {
-    if(document.querySelector("html").classList.contains("page-block"))
-        unblockScroll()
-    else
-        blockSroll()
-}
 
-function burgerAnimate() {
-    document.querySelectorAll(".header__burger-item").forEach((elem) => elem.classList.toggle("burger-animate"))
-}
-
-burgerButton.onclick = () =>{
-    checkScroll()
-    burgerAnimate()
-    navbar.classList.toggle("navbar-active")
-}

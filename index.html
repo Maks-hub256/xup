@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/main/mainPage.css">
     <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/form.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9e9295c51f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -314,9 +316,160 @@
                     </div>
                 </div>
             </div>
+
+            <!--err-->
+            <div class="err">
+                <div class="err__title">Цена <strong class="blue">ошибки</strong>, если у вас плохой интерфейс</div>
+                <img src="src/img/main_page/err.png" alt="" class="err__img">
+                <div class="err__text">
+                    Дизайн - это не просто стильная оболочка продукта, а один из инструментов продаж. Известно, что людям достаточно всего несколько мгновений, чтобы сформировать представление о любом объекте, и интерфейс вашего продукта не является исключением. Плохой дизайн вызывает недоверие, что приводит к низкой конверсии и потере посетителей.
+                </div>
+            </div>
+
+            <!--waring-->
+            <div class="waring">
+                <h1 class="waring__title">Чем <strong class="blue">угрожает</strong> плохо<br> разработанный интерфейс?</h1>
+                <div class="waring__section-wrapper">
+                    <section class="waring__section">
+                        <img src="src/img/main_page/product.png" alt="" class="waring__img">
+                        <h2 class="waring__little-title">Продуктам</h2>
+                        <p class="waring__text">Дизайн определяет, как бренд взаимодействует с потребителем. Плохо спроектированный интерфейс гарантирует негативный пользовательский опыт, потерю конверсии, плохую репутацию и отрицательные отзывы.</p>
+                    </section>
+                    <section class="waring__section">
+                        <img src="src/img/main_page/forStartUps.png" alt="" class="waring__img">
+                        <h2 class="waring__little-title">Стартапам</h2>
+                        <p class="waring__text">С плохим дизайном невозможно установить реальную ценность продукта для пользователей, что означает проигрыш в конкурентной борьбе и сложность привлечения инвестиций на проект.</p>
+                    </section>
+                    <section class="waring__section">
+                        <img src="src/img/main_page/systems.png" alt="" class="waring__img">
+                        <h2 class="waring__little-title">Служебным системам</h2>
+                        <p class="waring__text">Неудобный опыт взаимодействия с продуктом приводит к издержкам в бизнес-процессах и снижает эффективность персонала. Как следствие, компания терпит финансовые потери.</p>
+                    </section>
+                </div>
+            </div>
+
+            <!--questions-->
+            <div class="questions">
+                <div class="questions__section-wrapper">
+
+                    <section class="questions__section section-1">
+                        <div class="questions__line line-1">
+                            <h3 class="questions__section-title">Как рассчитывается стоимость?</h3>
+                            <div class="questions__option-wrapper">
+                                <div class="questions__option  option-1"></div>
+                                <div class="questions__option"></div>
+                            </div>
+                        </div>
+                        <div class="questions__info info-1">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dicta suscipit iusto maxime sed temporibus, maiores facilis quibusdam ipsam tenetur mollitia laboriosam nihil numquam quia tempore rerum ipsa cumque atque libero porro corporis soluta ducimus. Molestiae nisi impedit, velit ut vitae ipsa consequatur at.
+                        </div>
+                    </section>
+
+                    <section class="questions__section section-2">
+                        <div class="questions__line line-2">
+                            <h3 class="questions__section-title">Как формируется стоимость нормочаса?</h3>
+                            <div class="questions__option-wrapper">
+                                <div class="questions__option  option-2"></div>
+                                <div class="questions__option"></div>
+                            </div>
+                        </div>
+                        <div class="questions__info info-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloremque quaerat ad aliquam fuga nostrum qui magni totam error. Nobis rem eveniet ea dolorem, obcaecati, numquam suscipit praesentium sunt excepturi quo minus perspiciatis ex ullam molestiae iure voluptatem dolorum nemo tempore saepe nihil expedita. Mollitia, rerum laboriosam. Aliquid, nihil dolorum. Incidunt error eos maxime odit repudiandae reiciendis.
+                        </div>
+                    </section>
+
+                    <section class="questions__section section-3">
+                        <div class="questions__line line-3">
+                            <h3 class="questions__section-title">Как понять сколько часов мне требуется выкупать?</h3>
+                            <div class="questions__option-wrapper">
+                                <div class="questions__option  option-3"></div>
+                                <div class="questions__option"></div>
+                            </div>
+                        </div>
+                        <div class="questions__info info-3">
+                            Вы просто рассказываете нам о своих текущих задачах, а мы подберём оптимальную схему сотрудничества. А дальше вы можете согласится, а можете отказаться (но обычно происходит первое).
+                        </div>
+                    </section>
+
+                    <section class="questions__section section-4">
+                        <div class="questions__line line-4">
+                            <h3 class="questions__section-title">Как быстро вы можете приступить к работе?</h3>
+                            <div class="questions__option-wrapper">
+                                <div class="questions__option  option-4"></div>
+                                <div class="questions__option"></div>
+                            </div>
+                        </div>
+                        <div class="questions__info info-4">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quo, voluptates, nobis qui necessitatibus aliquid dignissimos ut, reiciendis dolore voluptatibus tempora. Itaque doloribus dolor esse dolorem a commodi voluptatum. Saepe praesentium minus facilis earum porro neque at fugiat. Aliquid, mollitia placeat officia fuga a necessitatibus velit neque ullam quae fugit.
+                        </div>
+                    </section>
+
+                    <section class="questions__section section-5">
+                        <div class="questions__line line-5">
+                            <h3 class="questions__section-title">С чего начать?</h3>
+                            <div class="questions__option-wrapper">
+                                <div class="questions__option  option-5"></div>
+                                <div class="questions__option"></div>
+                            </div>
+                        </div>
+                        <div class="questions__info info-5">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus repudiandae atque incidunt minus omnis saepe laboriosam explicabo. Distinctio at eaque ipsum, doloremque maiores ea animi libero odio sed quas? Incidunt excepturi quas molestiae nostrum accusantium iste qui fuga sunt.
+                        </div>
+                    </section>
+
+                    <section class="questions__section section-6">
+                        <div class="questions__line line-6">
+                            <h3 class="questions__section-title">Есть ли у вас статус ИП и работаете ли вы по договору?</h3>
+                            <div class="questions__option-wrapper">
+                                <div class="questions__option  option-6"></div>
+                                <div class="questions__option"></div>
+                            </div>
+                        </div>
+                        <div class="questions__info info-6">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis consequatur ea illo officiis explicabo aperiam sequi culpa iure sit, a itaque? Facilis sunt, eum ratione consequuntur laborum veniam quo doloribus blanditiis ab, saepe fugiat dolores ipsam nesciunt asperiores, officiis eius esse qui quas. Asperiores ea sequi minima esse possimus quod incidunt perspiciatis doloremque dolorum. Officiis quaerat inventore recusandae?
+                        </div>
+                    </section>
+
+                    
+                </div>
+                <div class="questions__title-wrapper">
+                    <h1 class="questions__title">Нам часто задают <strong class="blue">вопросы</strong></h1>
+                    <p class="questions__sub-title">Будем рады ответить на любые ваши вопросы по телефону:<br> +7 925 682 84 37</p>
+                </div>
+            </div>
+
+            <!--form-->
+            <div class="form">
+                <div class="form__title-wrapper">
+                    <h1 class="form__title">Хотите <strong class="blue">оценить</strong> ваш проект?</h1>
+                    <p class="form__sub-title">Опишите его основные идеи и функции - получите нашу бесплатную консультацию.</p>
+                </div>
+                <form class="form__form" method="GET">
+                    <div class="form__container">
+                        <div class="form__grop">
+                            <label for="" class="form__label">Имя</label>
+                            <input type="text" class="form__input" placeholder="Введите" >
+                        </div>
+                        <div class="form__grop">
+                            <label for="" class="form__label">Email</label>
+                            <input type="text" class="form__input" placeholder="Введите" >
+                        </div>
+                        <div class="form__grop">
+                            <label for="" class="form__label">Телефон</label>
+                            <input type="text" class="form__input" placeholder="Введите" >
+                        </div>
+                        <div class="form__grop">
+                            <label for="" class="form__label">Описание проекта</label>
+                            <textarea class="form__text-area" placeholder="Введите" ></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" class="form__submit" value="Оставить заявку">
+                </form>    
+            </div>
         </div>
     </main>
 
     <script src="src/js/app.js"></script>
+
 </body>
 </html>

@@ -258,6 +258,8 @@
     &__bunner{
         width: 100%;
         margin-top: $mobileOffset;
+        box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.47);
+        border-radius: 8px;
     }
     &__line{
         @include grid-line;
@@ -399,6 +401,8 @@
     &__banner{
         width: 540px;
         height: 400px;
+        box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.47);
+        border-radius: 8px;
     }
     &__line{
         @include grid-line;
@@ -429,6 +433,8 @@
     &__banner{
         width: 540px;
         height: 400px;
+        box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.47);
+        border-radius: 8px;
     }
     &__line{
         @include grid-line;
@@ -442,4 +448,116 @@
     &__text{
         @include grid-text;
     }
+}
+
+//err
+.err{
+    @include arrow;
+    margin-top: $topOffset;
+    &__title{
+        @include arrow-title;
+    }
+    &__img{
+        @include arrow-img;
+    }
+    &__text{
+        @include arrow-text;
+    }
+}
+
+//waring
+.waring{
+    margin-top: $topOffset;
+    width: 100%;
+    &__title{
+        @include title;
+        text-align: center;
+    }
+    &__section-wrapper{
+        @include line-block;
+    }
+    &__section{
+        @include line-block-section;
+    }
+    &__img{
+        @include line-block-img;
+    }
+    &__little-title{
+        @include line-block-little-title;
+    }
+    &__text{
+        @include line-block-text;
+    }
+}
+
+//questions
+.questions{
+    margin-top: $topOffset;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(400px, 2fr) 328px;
+    grid-column-gap: 62px;
+    &__title{
+        @include title;
+    }
+    &__sub-title{
+        @include sub-title;
+        text-align: left;
+        margin-top: 24px;
+    }
+    &__section{
+        width: 100%;
+        margin-bottom: 16px;
+        min-height: 60px;
+        background: $gray;
+        border-radius: 8px;
+        transition: .3s;
+    }
+    &__line{
+        width: 100%;
+        height: 60px;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+    &__section-title{
+        white-space: nowrap;
+        color: $black;
+    }
+    &__option-wrapper{
+        width: 14px;
+        height: 14px;
+        position: relative;
+    }
+    &__option{
+        position: absolute;
+        background: $black;
+        transition: .3s;
+        &:last-child{
+            width: 100%;
+            height: 2px;
+            top: calc(100% - 50% - 1px);
+        }
+        &:first-child{
+            height: 100%;
+            width: 2px;
+            left: calc(100% - 50% - 1px);
+        }
+    }
+    &__info{
+        @include sub-title;
+        text-align: left;
+        padding: 16px;
+        padding-top: 0;
+    }
+}
+.section-active{
+    background: $smallBlue;
+}
+.option-active{
+    transform: rotate(-90deg);
+    background: $blue;
 }

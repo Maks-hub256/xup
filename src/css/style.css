@@ -3,7 +3,7 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
-a,button,input{
+a,button,input,textarea{
     outline: none;
 }
 body{
