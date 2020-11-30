@@ -93,4 +93,10 @@
         float: right;
         @include buttonEffect;
     }
+    &__name-err, &__phone-err, &__email-err, &__message-err {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: $red;
+    }
 }

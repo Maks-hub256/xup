@@ -106,3 +106,9 @@
   background-color: #2D2D30;
   color: #fff;
 }
+.form__name-err, .form__phone-err, .form__email-err, .form__message-err {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #E45851;
+}
