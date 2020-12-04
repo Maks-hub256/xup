@@ -112,3 +112,46 @@
   line-height: 26px;
   color: #E45851;
 }
+
+@media (max-width: 916px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__form {
+    width: 100%;
+  }
+  .form__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 40px;
+    color: #2D2D30;
+    text-align: center;
+  }
+  .form__sub-title {
+    margin-top: 16px;
+    text-align: center;
+  }
+}
+@media (max-width: 390px) {
+  .form__submit {
+    width: 100%;
+    margin-top: 24px;
+  }
+  .form__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+    color: #2D2D30;
+    text-align: left;
+  }
+  .form__sub-title {
+    text-align: left;
+  }
+  .form__title-wrapper {
+    margin-bottom: 25px;
+  }
+}

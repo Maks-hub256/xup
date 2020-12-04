@@ -48,6 +48,22 @@
     color: $black;
 }
 
+@mixin tablet-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 40px;
+    color: $black;
+}
+
+@mixin mobile-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+    color: $black;
+}
+
 @mixin sub-title{
     font-style: normal;
     font-weight: normal;
@@ -160,3 +176,4 @@
     color: $black;
     margin-top: 24px;
 }
+
