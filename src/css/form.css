@@ -12,6 +12,15 @@
   line-height: 64px;
   color: #2D2D30;
 }
+@media (max-width: 834px) {
+  .form__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 40px;
+    color: #2D2D30;
+  }
+}
 .form__sub-title {
   font-style: normal;
   font-weight: normal;

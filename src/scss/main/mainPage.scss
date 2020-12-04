@@ -53,28 +53,16 @@
 
 //team
 .team{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 20px;
-    margin-left: 20px;
-    height: 400px;
-    grid-column-gap: 48px;
-    &__img{
-        width: 376px;
-        height: 400px;
-        box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.47);
-        border-radius: 8px;
-    }
+    @include arrow;
+    margin-top: $topOffset;
     &__title{
-        align-self: start;
-        @include title;
+        @include arrow-title;
+    }
+    &__img{
+        @include arrow-img;
     }
     &__text{
-        font-size: 14px;
-        line-height: 24px;
-        color: $grayText;
-        align-self: end;
+        @include arrow-text;
     }
 }
 
