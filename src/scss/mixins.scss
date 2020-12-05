@@ -186,12 +186,32 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    @media (max-width:834px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width:750px) {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 @mixin line-block-section{
     width: 328px;
     &:nth-child(2){
         margin: 0 20px;
+    }
+    @media (max-width:834px) {
+        margin: 0;
+        margin-bottom: 24px;
+    }
+    @media (max-width:750px) {
+        margin-bottom: 32px;
+    }
+    @media (max-width:500px) {
+        width: 100%;
     }
 }
 
