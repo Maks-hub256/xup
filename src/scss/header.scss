@@ -86,6 +86,7 @@
     }
     .header{
         position: fixed;
+        z-index: 10;
         height: 64px;
         &__button{
             display: none;

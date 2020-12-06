@@ -143,6 +143,7 @@
 
   .header {
     position: fixed;
+    z-index: 10;
     height: 64px;
   }
   .header__button {

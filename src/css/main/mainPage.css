@@ -29,7 +29,7 @@
   .main__title {
     font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 40px;
     color: #2D2D30;
   }
@@ -104,7 +104,7 @@
   .team__title {
     font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 40px;
     color: #2D2D30;
   }
@@ -151,7 +151,7 @@
   .work__title {
     font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 40px;
     color: #2D2D30;
   }
@@ -231,7 +231,7 @@
   .interface__title {
     font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 40px;
     color: #2D2D30;
   }
@@ -289,7 +289,7 @@
   .portfolio__title {
     font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 40px;
     color: #2D2D30;
   }
@@ -411,7 +411,7 @@
   .profit__title {
     font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 40px;
     color: #2D2D30;
   }
@@ -492,7 +492,7 @@
   .action__title {
     font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 40px;
     color: #2D2D30;
   }
@@ -526,7 +526,7 @@
 @media (max-width: 834px) {
   .action__section {
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 24px !important;
   }
 }
 @media (max-width: 750px) {
@@ -578,7 +578,7 @@
   .process__title {
     font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 40px;
     color: #2D2D30;
   }
@@ -685,7 +685,7 @@
   .advantages__title {
     font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 40px;
     color: #2D2D30;
   }
@@ -770,7 +770,7 @@
   .outsource__title {
     font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 40px;
     color: #2D2D30;
   }
@@ -872,7 +872,7 @@
   .err__title {
     font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 40px;
     color: #2D2D30;
   }
@@ -918,7 +918,7 @@
   .waring__title {
     font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 40px;
     color: #2D2D30;
   }
@@ -952,7 +952,7 @@
 @media (max-width: 834px) {
   .waring__section {
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 24px !important;
   }
 }
 @media (max-width: 750px) {
@@ -1006,7 +1006,7 @@
   .questions__title {
     font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 40px;
     color: #2D2D30;
   }
@@ -1123,6 +1123,36 @@
   .portfolio__section {
     width: 600px;
     height: 600px;
+    z-index: 1;
+  }
+}
+@media (max-width: 1050px) {
+  .advantages__title-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .advantages__title {
+    text-align: center;
+  }
+  .advantages__banner {
+    width: 100%;
+    height: initial;
+    margin-top: 32px;
+  }
+
+  .outsource__title-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .outsource__title {
+    text-align: center;
+  }
+  .outsource__banner {
+    width: 100%;
+    height: initial;
+    margin-top: 32px;
   }
 }
 @media (max-width: 780px) {
@@ -1150,5 +1180,23 @@
     grid-template-columns: 3fr 1fr;
     min-height: 60px;
     height: initial;
+  }
+
+  .portfolio__section {
+    width: 100%;
+  }
+}
+@media (max-width: 468px) {
+  .portfolio__section {
+    height: 410px;
+  }
+}
+@media (max-width: 390px) {
+  .portfolio__section {
+    height: 340px;
+  }
+
+  .main__title-button {
+    padding: 18px 25px;
   }
 }

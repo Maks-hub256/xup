@@ -54,7 +54,7 @@
 @mixin tablet-title {
     font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 32px;
     line-height: 40px;
     color: $black;
 }
@@ -205,7 +205,7 @@
     }
     @media (max-width:834px) {
         margin: 0;
-        margin-bottom: 24px;
+        margin-bottom: 24px !important;
     }
     @media (max-width:750px) {
         margin-bottom: 32px;

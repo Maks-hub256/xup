@@ -594,8 +594,42 @@
             align-items: center;
         }
         &__section{
-                width: 600px;
-                height: 600px;
+            width: 600px;
+            height: 600px;
+            z-index: 1;
+        }
+    }
+}
+
+@media (max-width:1050px) {
+    .advantages{
+        &__title-wrapper{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__title{
+            text-align: center;
+        }
+        &__banner{
+            width: 100%;
+            height: initial;
+            margin-top: 32px;
+        }
+    }
+    .outsource{
+        &__title-wrapper{
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+        &__title{
+            text-align: center;
+        }
+        &__banner{
+            width: 100%;
+            height: initial;
+            margin-top: 32px;
         }
     }
 }
@@ -629,6 +663,32 @@
             grid-template-columns: 3fr 1fr;
             min-height: 60px;
             height: initial ;            
+        }
+    }
+    .portfolio{
+        &__section{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 468px) {
+    .portfolio{
+        &__section{
+            height: 410px;
+        }
+    }
+}
+
+@media (max-width:390px) {
+    .portfolio{
+        &__section{
+            height: 340px;
+        }
+    }
+    .main{
+        &__title-button{
+            padding: 18px 25px;
         }
     }
 }
