@@ -1213,4 +1213,44 @@
   .process__way {
     display: none;
   }
+
+  .team {
+    margin-top: 0;
+  }
+
+  .main__title-wrapper {
+    margin-bottom: 180px !important;
+  }
+
+  .work {
+    margin-top: 104px;
+  }
+
+  .interface {
+    margin-top: 104px;
+  }
+
+  .portfolio {
+    margin-top: 104px;
+  }
+
+  .profit {
+    margin-top: 104px;
+  }
+
+  .outsource {
+    margin-top: 104px;
+  }
+
+  .waring {
+    margin-top: 104px;
+  }
+
+  .questions {
+    margin-top: 104px;
+  }
+
+  .form {
+    margin-top: 104px;
+  }
 }

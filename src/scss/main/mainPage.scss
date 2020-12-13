@@ -708,4 +708,34 @@
     .process__way{
         display: none;
     }
+    .team{
+        margin-top: 0;
+    }
+    .main__title-wrapper{
+        margin-bottom: 180px !important;
+    }
+    .work{
+        margin-top: $tabletOffset;
+    }
+    .interface{
+        margin-top: $tabletOffset;
+    }
+    .portfolio{
+        margin-top: $tabletOffset;
+    }
+    .profit{
+        margin-top: $tabletOffset;
+    }
+    .outsource{
+        margin-top: $tabletOffset;
+    }
+    .waring{
+        margin-top: $tabletOffset;
+    }
+    .questions{
+        margin-top: $tabletOffset;
+    }
+    .form{
+        margin-top: $tabletOffset;
+    }
 }
