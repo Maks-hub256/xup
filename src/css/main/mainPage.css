@@ -1200,3 +1200,17 @@
     padding: 18px 25px;
   }
 }
+@media (max-width: 850px) {
+  .process__chapter {
+    font-size: 13px;
+  }
+}
+@media (max-width: 780px) {
+  .process {
+    display: none;
+  }
+
+  .process__way {
+    display: none;
+  }
+}
