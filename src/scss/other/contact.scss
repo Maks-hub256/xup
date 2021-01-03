@@ -1,0 +1,53 @@
+@import '../vars';
+@import '../mixins';
+
+.main{
+    &__wrapper{
+        max-width: 1128px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    &__title-wrapper{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 126px;
+    }
+    &__title{
+        @include title;
+        text-align: center;
+    }
+    &__sub-title{
+        @include  sub-title;
+        margin-top: 24px;
+    }
+}
+
+.work{
+    width: 100%;
+    &__title{
+        @include title;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    &__bunner{
+        width: 100%;
+        box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.47);
+        border-radius:8px;
+    }
+    &__line{
+        @include grid-line;
+    }
+    &__section{
+        @include grid-section
+    }
+    &__section-title{
+        @include grid-section-title;
+    }
+    &__text{
+        @include grid-text;
+    }
+}

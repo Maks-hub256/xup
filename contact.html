@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Наши работы</title>
-    <link rel="stylesheet" href="src/css/other/other.css">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="src/css/other/contact.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/header.css">
     <link rel="stylesheet" href="src/css/form.css">
@@ -15,7 +15,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <!-- header -->
+    
+    <!--header-->
     <header class="header">
         <div class="header__wrapper">
             <a href="index.html" class="header__logo-link"><img src="src/img/logo.svg" alt="" class="header__logo"></a>
@@ -35,55 +36,44 @@
             </div>
         </div>
     </header>
-    
+
+
     <!-- main -->
     <main class="main">
         <div class="main__wrapper">
-            <!-- portfolio -->
-            <div class="section-5" style="margin-top: 0; padding-top: 80px;">
-                <h1 class="section-5__title">Наши <strong class="blue">работы</strong></h1>
-                <div class="section-5__wrapper">
-                    <section class="section-5__section" style="background: url(src/img/main_page/project1.png);">
-                        <span class="section-5__section-background">
-                            <span class="section-5__text-area">
-                                <h1 class="section-5__little-title">Doc Toc</h1>
-                                <p class="section-5__text">Doc Toc - мобильно приложение для записи к доктору</p>
-                                <a href="" class="section-5__button">Смотреть проект</a>
-                            </span>
-                        </span>
-                    </section>
-                    <section class="section-5__section" style="background: url(src/img/main_page/project2.png);">
-                        <span class="section-5__section-background">
-                            <span class="section-5__text-area">
-                                <h1 class="section-5__little-title">Uber Rent</h1>
-                                <p class="section-5__text">Uber Rent - сервис краткосрочной аренды недвижимости для юридических лиц</p>
-                                <a href="" class="section-5__button">Смотреть проект</a>
-                            </span>
-                        </span>
-                    </section>
-                    <section class="section-5__section" style="background: url(src/img/main_page/project3.png);">
-                        <span class="section-5__section-background">
-                            <span class="section-5__text-area">
-                                <h1 class="section-5__little-title">Trade Demp</h1>
-                                <p class="section-5__text">Trade Demp - платформа для отслежки цены </p>
-                                <a href="" class="section-5__button">Смотреть проект</a>
-                            </span>
-                        </span>
-                    </section>
-                    <section class="section-5__section" style="background: url(src/img/main_page/project4.png);">
-                        <span class="section-5__section-background">
-                            <span class="section-5__text-area">
-                                <h1 class="section-5__little-title">Tradex</h1>
-                                <p class="section-5__text">TradeX - платформа для криптотрейдинга и управления массовой торговлей</p>
-                                <a href="" class="section-5__button">Смотреть проект</a>
-                            </span>
-                        </span>
-                    </section>
+            <div class="main__title-wrapper">
+                <h1 class="main__title">Контакты</h1>
+                <p class="main__sub-title">Мы рады ответить на ваши вопросы!</p>
+            </div>
+
+            <div class="work__grid">
+                <div class="work__line">
+                    <div class="work__section">
+                        <img src="src/img/contact/mail.svg" alt="" class="work__icon">
+                        <h2 class="work__section-title">hello@xup.studio</h2>
+                        <p class="work__text">Электронная почта</p>
+                    </div>
+                    <div class="work__section">
+                        <img src="src/img/contact/phone.svg" alt="" class="work__icon">
+                        <h2 class="work__section-title">+7 925 682 84 37</h2>
+                        <p class="work__text">Телефон</p>
+                    </div>
+                </div>
+                <div class="work__line">
+                    <div class="work__section">
+                        <img src="src/img/contact/city.svg" alt="" class="work__icon">
+                        <h2 class="work__section-title">Москва</h2>
+                        <p class="work__text">Город</p>
+                    </div>
+                    <div class="work__section">
+                        <img src="src/img/contact/addres.svg" alt="" class="work__icon">
+                        <h2 class="work__section-title">Перовская 66 корпус 6</h2>
+                        <p class="work__text">Адрес</p>
+                    </div>
                 </div>
             </div>
 
             <!-- form -->
-
             <div class="form">
                 <div class="form__title-wrapper">
                     <h1 class="form__title">Хотите <strong class="blue">оценить</strong> ваш проект?</h1>
@@ -117,8 +107,11 @@
             </div>
         </div>
     </main>
+
+
+
     <!--footer-->
-    <footer class="footer">
+    <div class="footer">
         <div class="footer__wrapper">
             <div class="footer__left">
                 <a href="">
@@ -147,7 +140,6 @@
         </div>
     </div>
 
-    <!-- script -->
     <script src="src/js/form.js"></script>
     <script src="src/js/header.js"></script>
 </body>
