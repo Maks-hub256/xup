@@ -111,3 +111,8 @@
     margin-top: 104px;
   }
 }
+@media (max-width: 450px) {
+  .footer__left {
+    width: initial;
+  }
+}
