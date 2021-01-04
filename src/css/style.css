@@ -1,7 +1,8 @@
 *{
     margin: 0;
     scroll-behavior: smooth;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 a,button,input,textarea{
     outline: none;
